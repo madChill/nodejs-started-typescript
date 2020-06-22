@@ -19,7 +19,4 @@ const server = app.listen(app.get("port"), () => {
     console.log("Press CTRL-C to stop\n");
 });
 
-console.log("hello909ddddd");
-
-
 export default server;

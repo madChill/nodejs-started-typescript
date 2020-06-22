@@ -12,13 +12,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: "10mb" }));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
 
-// router.get("/api/v1", (req: any, res: any) => {
 
-//     res.end("helddlo")
-// });
+// list api
+import api from "./features"
+app.use("/api/v1", api());
 
 app.get("/healthCheck", async (req: any, res: any) => {
-    console.log("=========+===============");
     res.status(200).end("===============+=======");
 });
 
