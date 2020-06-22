@@ -32,12 +32,5 @@ module.exports = {
                 exclude: /node_modules/,
             }
         ]
-    },
-    devServer: {
-        contentBase: path.join(__dirname, 'build'),
-        compress: true,
-        port: 3000,
-        hot: true,
-        filename: 'bundle.js'
     }
 }
